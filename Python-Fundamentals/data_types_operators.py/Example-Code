@@ -1,0 +1,46 @@
+#  Day 1: Data Types & Operators
+
+# Numeric types
+a = 10        # int
+b = 3.14      # float
+c = 2 + 3j    # complex
+print("Numeric:", a, b, c)
+
+# String
+name = "Vihari"
+print("String:", name.upper())
+
+# List
+numbers = [1, 2, 3, 4]
+numbers.append(5)
+print("List:", numbers)
+
+# Tuple
+coordinates = (10, 20)
+print("Tuple:", coordinates)
+
+# Set
+unique_vals = {1, 2, 2, 3}
+print("Set:", unique_vals)
+
+# Dictionary
+student = {"name": "Vihari", "branch": "AIML"}
+print("Dictionary:", student)
+
+# Boolean
+flag = True
+print("Boolean:", flag)
+
+# Operators
+x, y = 10, 3
+print("Arithmetic:", x + y, x - y, x * y, x / y, x // y, x % y, x ** y)
+print("Comparison:", x > y, x == y, x != y)
+print("Logical:", (x > 5 and y < 5), (x < 5 or y < 5), not flag)
+
+# Membership
+print("Membership:", 2 in numbers, "Vihari" not in student)
+
+# Identity
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+print("Identity:", list1 is list2, list1 == list2)
