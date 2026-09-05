@@ -1,1 +1,226 @@
+# Introduction to Python & Basic Syntax
+
+###  Objective
+
+Understand what Python is, why it is widely used, how to execute Python programs, and learn the basic syntax required to write your first Python programs.
+
+---
+
+##  Topics Covered
+
+### 1. What is Python?
+
+Python is a **high-level, interpreted, general-purpose programming language** known for its simple and readable syntax.
+
+It is widely used in:
+
+*  Artificial Intelligence & Machine Learning
+*  Data Science
+*  Web Development
+*  Cloud & DevOps
+*  Automation & Scripting
+*  Cybersecurity
+*  Data Analysis
+
+---
+
+### 2. Why Learn Python?
+
+Python is popular because:
+
+* Simple and beginner-friendly syntax
+* Large ecosystem of libraries
+* Cross-platform
+* Open source
+* Large developer community
+* Excellent support for AI/ML and data science
+* Useful for automation and backend development
+
+---
+
+## 3. First Python Program
+
+Create:
+
+```text
+Day-01-Python-Introduction/
+└── hello_world.py
+```
+
+### `hello_world.py`
+
+```python
+print("Hello, World!")
+print("Welcome to my Python Programming Journey!")
+print("Day 1 - Python Introduction")
+```
+
+Run it using:
+
+```bash
+python hello_world.py
+```
+
+Expected output:
+
+```text
+Hello, World!
+Welcome to my Python Programming Journey!
+Day 1 - Python Introduction
+```
+
+---
+
+#  4. Python Comments
+
+Comments are used to explain code.
+
+### Single-line comment
+
+```python
+# This is a Python comment
+
+print("Hello Python")
+```
+
+Python ignores everything after `#` on that line.
+
+### Multi-line documentation/comment style
+
+```python
+"""
+This program demonstrates
+basic Python syntax.
+"""
+
+print("Learning Python")
+```
+
+---
+
+#  5. Python Syntax
+
+Python uses indentation to define blocks of code.
+
+Example:
+
+```python
+age = 21
+
+if age >= 18:
+    print("You are an adult")
+```
+
+Notice the indentation before `print()`.
+
+Incorrect:
+
+```python
+age = 21
+
+if age >= 18:
+print("You are an adult")
+```
+
+Python will raise an indentation error.
+
+---
+
+#  6. The `print()` Function
+
+The `print()` function displays information on the screen.
+
+```python
+print("Python")
+print(100)
+print(10 + 20)
+```
+
+Output:
+
+```text
+Python
+100
+30
+```
+
+You can print multiple values:
+
+```python
+name = "Vihari"
+age = 21
+
+print(name, age)
+```
+
+---
+
+#  7. Basic Practice Programs
+
+Create another file:
+
+```text
+basic_programs.py
+```
+
+### Program 1 — Personal Introduction
+
+```python
+print("Name: Vihari")
+print("Programming Language: Python")
+print("Goal: Become a skilled Python Developer")
+```
+
+### Program 2 — Basic Arithmetic
+
+```python
+print("Addition:", 10 + 5)
+print("Subtraction:", 10 - 5)
+print("Multiplication:", 10 * 5)
+print("Division:", 10 / 5)
+```
+
+### Program 3 — Simple Greeting
+
+```python
+name = "Python Learner"
+
+print("Hello", name)
+print("Welcome to Python Programming!")
+```
+
+---
+
+#  8. Taking User Input
+
+Python allows programs to interact with users.
+
+```python
+name = input("Enter your name: ")
+
+print("Hello", name)
+print("Welcome to Python!")
+```
+
+Example:
+
+```text
+Enter your name: Vihari
+Hello Vihari
+Welcome to Python!
+```
+
+### Important
+
+`input()` normally returns data as a **string**.
+
+For numbers:
+
+```python
+age = int(input("Enter your age: "))
+
+print("Your age is:", age)
+```
+
+---
 
