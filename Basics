@@ -1,0 +1,441 @@
+# Variables, Data Types, Input, Type Casting & Operators
+
+Welcome to **Day 02** of my Python Programming Portfolio.
+
+This day focuses on understanding how Python stores data, accepts user input, converts between data types, and performs operations using different types of operators.
+
+---
+
+## 🎯 Learning Objectives
+
+By the end of Day 02, I learned how to:
+
+- Create and use variables in Python
+- Understand Python's built-in data types
+- Take input from users
+- Convert data from one type to another
+- Use arithmetic operators
+- Use comparison operators
+- Use logical operators
+- Use assignment operators
+- Use membership operators
+- Use identity operators
+- Check data types using `type()`
+- Build simple Python programs using these concepts
+
+---
+
+## 📚 Topics Covered
+
+### 1. Variables
+
+Variables are used to store data values in Python.
+
+```python
+name = "Vihari"
+age = 21
+cgpa = 8.0
+is_student = True
+````
+
+Python automatically determines the type of a variable based on the assigned value.
+
+---
+
+### 2. Python Data Types
+
+Python provides several built-in data types.
+
+| Data Type | Example              | Description                           |
+| --------- | -------------------- | ------------------------------------- |
+| `int`     | `10`                 | Integer numbers                       |
+| `float`   | `10.5`               | Decimal numbers                       |
+| `str`     | `"Python"`           | Text                                  |
+| `bool`    | `True`               | Boolean values                        |
+| `list`    | `[1, 2, 3]`          | Ordered, mutable collection           |
+| `tuple`   | `(1, 2, 3)`          | Ordered, immutable collection         |
+| `set`     | `{1, 2, 3}`          | Unordered collection of unique values |
+| `dict`    | `{"name": "Vihari"}` | Key-value pairs                       |
+
+### Example
+
+```python
+name = "Vihari"
+age = 21
+percentage = 85.5
+is_student = True
+
+print(type(name))
+print(type(age))
+print(type(percentage))
+print(type(is_student))
+```
+
+---
+
+## ⌨️ 3. Taking User Input
+
+The `input()` function is used to accept data from the user.
+
+```python
+name = input("Enter your name: ")
+
+print("Hello", name)
+```
+
+By default, `input()` returns the value as a string.
+
+---
+
+## 🔄 4. Type Casting
+
+Type casting means converting a value from one data type to another.
+
+### Common Type Conversion Functions
+
+```python
+int()
+float()
+str()
+bool()
+```
+
+### Example
+
+```python
+age = input("Enter your age: ")
+
+age = int(age)
+
+print("Age:", age)
+print("Data Type:", type(age))
+```
+
+---
+
+# ➕ 5. Python Operators
+
+Operators are symbols used to perform operations on values and variables.
+
+---
+
+## Arithmetic Operators
+
+| Operator | Description    | Example  |
+| -------- | -------------- | -------- |
+| `+`      | Addition       | `a + b`  |
+| `-`      | Subtraction    | `a - b`  |
+| `*`      | Multiplication | `a * b`  |
+| `/`      | Division       | `a / b`  |
+| `//`     | Floor Division | `a // b` |
+| `%`      | Modulus        | `a % b`  |
+| `**`     | Exponentiation | `a ** b` |
+
+### Example
+
+```python
+a = 20
+b = 6
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Floor Division:", a // b)
+print("Modulus:", a % b)
+print("Power:", a ** b)
+```
+
+---
+
+## Comparison Operators
+
+Comparison operators compare two values and return either `True` or `False`.
+
+```python
+a = 10
+b = 20
+
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+```
+
+### Operators
+
+```text
+==    Equal to
+!=    Not equal to
+>     Greater than
+<     Less than
+>=    Greater than or equal to
+<=    Less than or equal to
+```
+
+---
+
+## 🧠 Logical Operators
+
+Logical operators are used to combine multiple conditions.
+
+| Operator | Description                                    |
+| -------- | ---------------------------------------------- |
+| `and`    | Returns True if both conditions are True       |
+| `or`     | Returns True if at least one condition is True |
+| `not`    | Reverses the result                            |
+
+### Example
+
+```python
+age = 21
+has_id = True
+
+print(age >= 18 and has_id)
+print(age >= 18 or has_id)
+print(not has_id)
+```
+
+---
+
+## 📝 Assignment Operators
+
+Assignment operators are used to assign and update values.
+
+```python
+x = 10
+
+x += 5
+print(x)
+
+x -= 2
+print(x)
+
+x *= 2
+print(x)
+
+x /= 2
+print(x)
+```
+
+Common assignment operators:
+
+```text
+= 
++=
+-=
+*=
+/=
+%=
+**=
+//=
+```
+
+---
+
+## 🔍 Membership Operators
+
+Membership operators check whether a value exists inside a collection.
+
+```python
+languages = ["Python", "Java", "C++"]
+
+print("Python" in languages)
+print("JavaScript" not in languages)
+```
+
+Operators:
+
+```text
+in
+not in
+```
+
+---
+
+## 🆔 Identity Operators
+
+Identity operators check whether two variables refer to the same object.
+
+```python
+a = [1, 2, 3]
+b = a
+
+print(a is b)
+print(a is not b)
+```
+
+Operators:
+
+```text
+is
+is not
+```
+
+---
+
+# 🧪 Practice Programs
+
+During Day 02, I practiced the following programs:
+
+### 1. Personal Information
+
+```python
+name = "Vihari"
+age = 21
+course = "Artificial Intelligence and Machine Learning"
+
+print("Name:", name)
+print("Age:", age)
+print("Course:", course)
+```
+
+### 2. Area of a Circle
+
+```python
+radius = float(input("Enter radius: "))
+
+area = 3.14159 * radius * radius
+
+print("Area of Circle:", area)
+```
+
+### 3. Celsius to Fahrenheit
+
+```python
+celsius = float(input("Enter temperature in Celsius: "))
+
+fahrenheit = (celsius * 9/5) + 32
+
+print("Temperature in Fahrenheit:", fahrenheit)
+```
+
+### 4. Simple Interest
+
+```python
+principal = float(input("Enter principal amount: "))
+rate = float(input("Enter rate: "))
+time = float(input("Enter time: "))
+
+simple_interest = (principal * rate * time) / 100
+
+print("Simple Interest:", simple_interest)
+```
+
+---
+
+# 🧮 Mini Project — Basic Calculator
+
+I created a simple calculator using Python.
+
+```python
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print("\nResults:")
+print("Addition:", num1 + num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num1 * num2)
+
+if num2 != 0:
+    print("Division:", num1 / num2)
+else:
+    print("Division: Cannot divide by zero")
+```
+
+### Concepts Used
+
+* Variables
+* User input
+* Type casting
+* Arithmetic operators
+* Conditional validation
+* Basic error prevention
+
+---
+
+
+#  Tools & Technologies
+
+* **Python**
+* **VS Code**
+* **Git**
+* **GitHub**
+
+---
+
+#  Key Takeaways
+
+Through Day 02, I developed a better understanding of Python's basic data handling and operations.
+
+### Key concepts learned:
+
+* Variables store values in Python.
+* Python supports multiple built-in data types.
+* `input()` is used to receive user input.
+* `input()` returns a string by default.
+* Type casting allows conversion between data types.
+* Operators are used to perform calculations and comparisons.
+* Boolean expressions return `True` or `False`.
+* Small programs help strengthen programming fundamentals.
+
+---
+
+#  Skills Practiced
+
+```text
+Python Fundamentals
+Variables
+Data Types
+User Input
+Type Casting
+Arithmetic Operations
+Comparison Operations
+Logical Operations
+Assignment Operations
+Membership Operations
+Identity Operations
+Problem Solving
+```
+
+---
+
+# 📈 Learning Progress
+
+| Day    | Topic                             | Status      |
+| ------ | --------------------------------- | ----------- |
+| Day 01 | Python Fundamentals               | ✅ Completed |
+| Day 02 | Variables, Data Types & Operators | ✅ Completed |
+| Day 03 | Conditional Statements            | 🔜 Upcoming |
+
+---
+
+#  Next Step
+
+**Day 03 — Conditional Statements & Decision Making**
+
+Topics planned:
+
+* `if` statement
+* `if-else`
+* `if-elif-else`
+* Nested conditions
+* Multiple conditions
+* Practical decision-making programs
+
+---
+
+##  Portfolio Goal
+
+This repository documents my **daily Python programming journey**, practical exercises, problem-solving practice, and mini-projects.
+
+The goal is to build a strong foundation in Python and progressively develop the skills required for **Software Development, Data Science, Artificial Intelligence, Machine Learning, and Cloud Computing**.
+
+---
+
+ **Day 02 Completed — Keep Learning, Keep Building!**
+
+```
+
