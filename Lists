@@ -1,0 +1,251 @@
+#  Python Lists
+
+##  Topics Covered
+
+* Creating Lists
+* List Indexing
+* List Slicing
+* Updating List Elements
+* Adding Elements
+* Removing Elements
+* List Methods
+* Sorting and Reversing Lists
+* Iterating through Lists
+
+---
+
+## 1. Creating a List
+
+A list is an ordered and mutable collection of elements.
+
+```python
+languages = ["Python", "Java", "C++"]
+
+print(languages)
+```
+
+Lists can contain different data types:
+
+```python
+data = ["Vihari", 21, 8.5, True]
+
+print(data)
+```
+
+---
+
+## 2. List Indexing
+
+List indexing starts from `0`.
+
+```python
+languages = ["Python", "Java", "C++"]
+
+print(languages[0])   # Python
+print(languages[1])   # Java
+print(languages[-1])  # C++
+```
+
+---
+
+## 3. List Slicing
+
+Slicing extracts a portion of a list.
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4])
+print(numbers[:3])
+print(numbers[2:])
+```
+
+---
+
+## 4. Updating List Elements
+
+Lists are mutable, meaning their elements can be changed.
+
+```python
+languages = ["Python", "Java", "C++"]
+
+languages[1] = "JavaScript"
+
+print(languages)
+```
+
+---
+
+## 5. Adding Elements
+
+### `append()`
+
+Adds an element at the end.
+
+```python
+languages = ["Python", "Java"]
+
+languages.append("C++")
+
+print(languages)
+```
+
+### `insert()`
+
+Adds an element at a specific position.
+
+```python
+languages.insert(1, "JavaScript")
+
+print(languages)
+```
+
+### `extend()`
+
+Adds multiple elements.
+
+```python
+languages.extend(["C", "Go"])
+
+print(languages)
+```
+
+---
+
+## 6. Removing Elements
+
+### `remove()`
+
+Removes a specific value.
+
+```python
+languages.remove("Java")
+```
+
+### `pop()`
+
+Removes an element using its index.
+
+```python
+languages.pop(0)
+```
+
+### `clear()`
+
+Removes all elements.
+
+```python
+languages.clear()
+```
+
+---
+
+## 7. Common List Methods
+
+| Method      | Purpose                     |
+| ----------- | --------------------------- |
+| `append()`  | Adds an element             |
+| `insert()`  | Adds at a specific position |
+| `extend()`  | Adds multiple elements      |
+| `remove()`  | Removes a specific value    |
+| `pop()`     | Removes an element          |
+| `sort()`    | Sorts the list              |
+| `reverse()` | Reverses the list           |
+| `count()`   | Counts occurrences          |
+| `index()`   | Finds the position          |
+| `clear()`   | Removes all elements        |
+
+---
+
+## 8. Sorting and Reversing
+
+```python
+numbers = [40, 10, 30, 20, 50]
+
+numbers.sort()
+print(numbers)
+
+numbers.reverse()
+print(numbers)
+```
+
+---
+
+## 9. Checking Elements
+
+The `in` operator checks whether an element exists in a list.
+
+```python
+languages = ["Python", "Java", "C++"]
+
+print("Python" in languages)
+print("Ruby" in languages)
+```
+
+---
+
+## 10. List Length
+
+The `len()` function returns the number of elements.
+
+```python
+numbers = [10, 20, 30, 40]
+
+print(len(numbers))
+```
+
+---
+
+##  Practice Programs
+
+1. Find the largest number in a list.
+2. Find the smallest number in a list.
+3. Calculate the sum of list elements.
+4. Remove duplicate values.
+5. Sort a list in ascending order.
+6. Reverse a list.
+7. Count the occurrence of an element.
+8. Find the second-largest number.
+
+### Example
+
+```python
+numbers = [10, 25, 5, 40, 15]
+
+print("Largest:", max(numbers))
+print("Smallest:", min(numbers))
+print("Total:", sum(numbers))
+```
+
+---
+
+##  Applications
+
+Python lists are widely used in:
+
+* Data Collection
+* Data Processing
+* Data Cleaning
+* Machine Learning
+* Web Development
+* Automation
+* API Data Handling
+
+---
+
+## Key Takeaway
+
+Today I learned how to create, access, modify, and manipulate Python lists using indexing, slicing, built-in methods, and list operations.
+
+Lists are an important foundation for working with **collections of data in Python**.
+
+---
+
+##  Tools Used
+
+* Python
+* VS Code
+* Git
+* GitHub
+
+
