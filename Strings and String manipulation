@@ -1,0 +1,210 @@
+# Python Strings & String Manipulation
+
+##  Overview
+
+Today I learned about **strings in Python** and different techniques to manipulate and process text.
+
+##  Topics Covered
+
+* Creating Strings
+* String Indexing
+* String Slicing
+* String Methods
+* Searching in Strings
+* Splitting and Joining
+* String Formatting
+* String Validation
+
+---
+
+## 1. Creating Strings
+
+Strings are sequences of characters enclosed within single, double, or triple quotes.
+
+```python
+name = "Vihari"
+language = 'Python'
+
+print(name)
+print(language)
+```
+
+---
+
+## 2. String Indexing
+
+Each character in a string has an index starting from `0`.
+
+```python
+text = "Python"
+
+print(text[0])    # P
+print(text[2])    # t
+print(text[-1])   # n
+```
+
+---
+
+## 3. String Slicing
+
+Slicing is used to extract a specific portion of a string.
+
+```python
+text = "Python Programming"
+
+print(text[0:6])
+print(text[:6])
+print(text[7:])
+print(text[::-1])
+```
+
+---
+
+## 4. Common String Methods
+
+Python provides several built-in methods for manipulating strings.
+
+```python
+text = "python programming"
+
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.capitalize())
+print(text.replace("python", "Java"))
+```
+
+### Frequently Used Methods
+
+| Method         | Purpose                         |
+| -------------- | ------------------------------- |
+| `upper()`      | Converts to uppercase           |
+| `lower()`      | Converts to lowercase           |
+| `title()`      | Converts to title case          |
+| `capitalize()` | Capitalizes first character     |
+| `replace()`    | Replaces text                   |
+| `strip()`      | Removes leading/trailing spaces |
+| `split()`      | Splits a string                 |
+| `join()`       | Joins strings                   |
+
+---
+
+## 5. Searching in Strings
+
+The `in` operator and `find()` method can be used to search for text.
+
+```python
+text = "Python is easy to learn"
+
+print("Python" in text)
+print(text.find("easy"))
+```
+
+---
+
+## 6. Splitting and Joining
+
+### Split
+
+```python
+text = "Python,Java,C++"
+
+languages = text.split(",")
+
+print(languages)
+```
+
+### Join
+
+```python
+languages = ["Python", "Java", "C++"]
+
+result = " - ".join(languages)
+
+print(result)
+```
+
+---
+
+## 7. String Formatting
+
+F-strings provide a simple way to insert variables into strings.
+
+```python
+name = "Vihari"
+skill = "Python"
+
+print(f"My name is {name} and I am learning {skill}.")
+```
+
+---
+
+## 8. String Validation
+
+Python provides methods to check the contents of a string.
+
+```python
+text = "Python123"
+
+print(text.isalpha())
+print(text.isdigit())
+print(text.isalnum())
+print(text.startswith("Python"))
+print(text.endswith("123"))
+```
+
+---
+
+##  Practice Programs
+
+1. Reverse a string
+2. Count vowels and consonants
+3. Check whether a string is a palindrome
+4. Count words in a sentence
+5. Find the frequency of a character
+6. Remove extra spaces from a string
+7. Convert a sentence into title case
+
+### Example – Palindrome Check
+
+```python
+text = input("Enter a string: ")
+
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+```
+
+---
+
+## 💡 Applications
+
+String manipulation is commonly used in:
+
+* Data Cleaning
+* Text Processing
+* Natural Language Processing (NLP)
+* Data Preprocessing
+* Web Development
+* File Handling
+* Automation
+
+---
+
+## Key Takeaway
+
+Today I learned how to work with Python strings using **indexing, slicing, built-in methods, searching, formatting, splitting, joining, and validation**.
+
+These concepts provide a foundation for working with text and preparing data for applications such as **AI, ML, and NLP**.
+
+---
+
+##  Tools Used
+
+* Python
+* VS Code
+* Git
+* GitHub
+
+**Day 5 Status:** ✅ Completed
