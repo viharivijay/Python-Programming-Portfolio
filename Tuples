@@ -1,0 +1,255 @@
+#  Python Tuples
+
+##  Topics Covered
+
+* Creating Tuples
+* Tuple Indexing
+* Tuple Slicing
+* Tuple Immutability
+* Tuple Packing
+* Tuple Unpacking
+* Nested Tuples
+* Tuple Methods
+* Tuple vs List
+
+---
+
+## 1. Creating a Tuple
+
+A tuple is created by placing elements inside parentheses `()`.
+
+```python
+languages = ("Python", "Java", "C++")
+
+print(languages)
+```
+
+A tuple can also contain different data types:
+
+```python
+student = ("Vihari", 21, 8.5, True)
+
+print(student)
+```
+
+---
+
+## 2. Tuple Indexing
+
+Tuple indexing starts from `0`.
+
+```python
+languages = ("Python", "Java", "C++")
+
+print(languages[0])
+print(languages[1])
+print(languages[-1])
+```
+
+**Output:**
+
+```text
+Python
+Java
+C++
+```
+
+---
+
+## 3. Tuple Slicing
+
+Tuples support slicing just like strings and lists.
+
+```python
+numbers = (10, 20, 30, 40, 50)
+
+print(numbers[1:4])
+print(numbers[:3])
+print(numbers[2:])
+```
+
+---
+
+## 4. Tuples are Immutable
+
+Tuples cannot be modified after they are created.
+
+```python
+numbers = (10, 20, 30)
+
+# This will cause an error
+# numbers[0] = 100
+```
+
+This makes tuples useful when data should remain unchanged.
+
+---
+
+## 5. Single-Element Tuple
+
+A comma is required when creating a tuple with only one element.
+
+```python
+single = (10,)
+
+print(type(single))
+```
+
+Without the comma:
+
+```python
+single = (10)
+
+print(type(single))
+```
+
+This is treated as an integer, not a tuple.
+
+---
+
+## 6. Tuple Packing
+
+Packing means placing multiple values into a tuple.
+
+```python
+student = "Vihari", 21, "AIML"
+
+print(student)
+```
+
+---
+
+## 7. Tuple Unpacking
+
+Unpacking assigns tuple elements to separate variables.
+
+```python
+student = ("Vihari", 21, "AIML")
+
+name, age, branch = student
+
+print(name)
+print(age)
+print(branch)
+```
+
+---
+
+## 8. Nested Tuples
+
+A tuple can contain another tuple.
+
+```python
+data = ("Vihari", (85, 90, 88))
+
+print(data[0])
+print(data[1])
+print(data[1][0])
+```
+
+---
+
+## 9. Tuple Methods
+
+Tuples have two main built-in methods.
+
+### `count()`
+
+Counts how many times a value appears.
+
+```python
+numbers = (10, 20, 10, 30, 10)
+
+print(numbers.count(10))
+```
+
+### `index()`
+
+Returns the position of a value.
+
+```python
+numbers = (10, 20, 30, 40)
+
+print(numbers.index(30))
+```
+
+---
+
+## 10. Useful Tuple Operations
+
+```python
+numbers = (10, 20, 30, 40)
+
+print(len(numbers))
+print(max(numbers))
+print(min(numbers))
+print(sum(numbers))
+print(20 in numbers)
+```
+
+---
+
+## 🔄 Tuple vs List
+
+| Feature    | List            | Tuple      |
+| ---------- | --------------- | ---------- |
+| Syntax     | `[]`            | `()`       |
+| Mutable    | Yes             | No         |
+| Ordered    | Yes             | Yes        |
+| Duplicates | Allowed         | Allowed    |
+| Methods    | More            | Fewer      |
+| Best for   | Changeable data | Fixed data |
+
+---
+
+##  Practice Programs
+
+1. Create a tuple containing student information.
+2. Find the length of a tuple.
+3. Find the largest and smallest element.
+4. Count occurrences of an element.
+5. Find the index of an element.
+6. Unpack a tuple into variables.
+7. Create a nested tuple.
+8. Convert a list into a tuple.
+
+### Example
+
+```python
+numbers = (10, 20, 30, 20, 40, 20)
+
+print("Length:", len(numbers))
+print("Count of 20:", numbers.count(20))
+print("Index of 30:", numbers.index(30))
+```
+
+---
+
+##  Applications
+
+Tuples are useful for:
+
+* Storing fixed data
+* Returning multiple values from functions
+* Representing coordinates
+* Storing configuration values
+* Working with database records
+* Data processing
+* Machine Learning workflows
+
+---
+
+##  Key Takeaway
+
+Today I learned that **tuples are ordered and immutable collections in Python**. I learned how to create, access, slice, unpack, and perform operations on tuples.
+
+Tuples are particularly useful when data should remain **unchanged and protected from accidental modification**.
+
+---
+
+##  Tools Used
+
+* Python
+* VS Code
+* Git
+* GitHub
