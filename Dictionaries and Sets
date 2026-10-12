@@ -65,6 +65,5 @@ These operations find combined elements, common elements, and elements present o
 - **Dictionaries:** Store student records, configuration settings, and frequency counts.
 - **Sets:** Remove duplicate values, compare collections, and find common items.
 
-
 ## Conclusion
 Dictionaries and sets are important Python data structures that support efficient data organization, lookup, and comparison.
