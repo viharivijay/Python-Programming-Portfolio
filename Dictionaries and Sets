@@ -1,0 +1,70 @@
+# Dictionaries and Sets
+
+## Overview
+Dictionaries and sets are built-in Python data structures used to store and manage collections of data efficiently.
+
+## 1. Dictionaries
+A dictionary stores data as key-value pairs. Each key must be unique.
+
+```python
+student = {
+    "name": "Vihari",
+    "branch": "AIML",
+    "marks": 85
+}
+
+print(student["name"])
+print(student["marks"])
+```
+
+**Output:**
+```text
+Vihari
+85
+```
+
+### Common Dictionary Operations
+- Add or update values
+- Access values using keys
+- Remove key-value pairs
+- Iterate through keys and values
+- Check whether a key exists
+
+```python
+student["marks"] = 90
+student["college"] = "Engineering College"
+
+for key, value in student.items():
+    print(key, ":", value)
+```
+
+## 2. Sets
+A set is an unordered collection of unique elements. Duplicate values are automatically removed.
+
+```python
+numbers = {10, 20, 30, 20, 40}
+print(numbers)
+```
+
+**Output:** The set contains `10, 20, 30, 40` (the order may vary).
+
+### Set Operations
+
+```python
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+
+print(a.union(b))
+print(a.intersection(b))
+print(a.difference(b))
+```
+
+These operations find combined elements, common elements, and elements present only in the first set, respectively.
+
+## 3. Practical Applications
+- **Dictionaries:** Store student records, configuration settings, and frequency counts.
+- **Sets:** Remove duplicate values, compare collections, and find common items.
+
+
+## Conclusion
+Dictionaries and sets are important Python data structures that support efficient data organization, lookup, and comparison.
