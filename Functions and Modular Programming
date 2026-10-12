@@ -1,0 +1,68 @@
+# Python Functions and Modular Programming
+
+## Overview
+Python functions are reusable blocks of code designed to perform specific tasks. They improve code reusability, readability, organization, and maintainability.
+
+## 1. Defining a Function
+Use the `def` keyword to define a function.
+
+```python
+def greet():
+    print("Welcome to Python Programming!")
+
+greet()
+```
+
+**Output:**
+```text
+Welcome to Python Programming!
+```
+
+## 2. Functions with Parameters
+Parameters allow functions to accept input values.
+
+```python
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+print(result)
+```
+
+**Output:** `30`
+
+## 3. Types of Function Arguments
+- Positional arguments
+- Keyword arguments
+- Default arguments
+- Variable-length arguments (`*args` and `**kwargs`)
+
+## 4. Lambda Functions
+Lambda functions are small anonymous functions written using the `lambda` keyword.
+
+```python
+square = lambda x: x * x
+print(square(5))
+```
+
+**Output:** `25`
+
+## 5. Modules in Python
+A module is a Python file containing reusable functions, variables, or classes. Built-in modules such as `math` and `random` provide additional functionality.
+
+```python
+import math
+
+print(math.sqrt(64))
+```
+
+**Output:** `8.0`
+
+## Key Takeaways
+- Functions reduce code duplication.
+- Parameters and return values make functions flexible.
+- Lambda functions simplify small expressions.
+- Modules help organize larger Python programs.
+
+## Conclusion
+Understanding functions and modules is essential for writing structured, reusable Python programs and building larger applications.
